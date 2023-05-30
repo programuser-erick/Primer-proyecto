@@ -1,0 +1,98 @@
+
+//introduccion
+
+main{
+    h1{
+        padding: 20px;
+        margin-top: 4rem;
+        font-family: 'Playfair Display', serif;
+        color: $color-texto;
+    }
+    section{
+    margin-top: 90px;
+    margin-bottom: 5rem;
+    line-height: 30px;
+        div{
+            div{
+                .title-sub{
+                    font-family: 'Playfair Display', serif;
+                    position: sticky;
+                    top: 0;
+                    color: $color-texto;
+                }
+            }
+            div{
+            color: white;
+            font-weight: 700;
+                .parrafo-subtitulo{
+                    margin-bottom: 100px;
+                }
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 3rem;
+                color: white;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+//galeria
+
+section{
+    .bordes{
+        border: 3px solid $color-layoud;
+        border-radius: 2%;
+        padding: 3rem;
+        div{
+            img{
+            border-radius: 2%;
+            -webkit-box-shadow: 4px 3px 0px 0px rgba(237,196,82,1);
+            -moz-box-shadow: 4px 3px 0px 0px rgba(237,196,82,1);
+            box-shadow: 4px 3px 0px 0px rgba(237,196,82,1);
+            }
+        }
+    }
+}
+
+//presentacion
+section{
+    h3{
+        color: $color-texto;
+    }
+    div{
+        .flexible{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 4rem;
+            .card{
+                border-radius: 2%;
+                -webkit-box-shadow: 4px 3px 0px 0px rgba(237,196,82,1);
+                -moz-box-shadow: 4px 3px 0px 0px rgba(237,196,82,1);
+                box-shadow: 4px 3px 0px 0px rgba(237,196,82,1);
+                div{
+                    background-color: $color-decoracion;
+                    color: white;
+                    padding: 2rem;
+                    .puesto-tarjeta{
+                        color: $color-fondo;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+//final
+
+section{
+    margin-top: 20%;
+    margin-bottom: 25%;
+}
+
+
+
+

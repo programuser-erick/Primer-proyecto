@@ -1,0 +1,50 @@
+
+footer{
+    background-color: $color-layoud;
+    padding: 3rem;
+    div{
+        font-size: 16px;
+        color: white;
+        align-items: center;
+        .p-estilo{
+            color: $color-texto; 
+        }
+        .margin-query{
+            a{
+                text-decoration: none; 
+                .estilo-redes{
+                    padding: 15px;
+                    border: 3px solid $color-decoracion;
+                    border-radius: 50%;
+                    color: white;
+                    margin: 5px;
+                    &:hover{
+                        @include media-hover(){
+                            background-color: $color-fondo;
+                        } 
+                    }
+                    & {
+                        @include menu-burger() {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                &{
+                    @include menu-burger(){
+                        margin-right: 10px;
+                    }
+                }
+                
+            } 
+        &{
+            @include menu-burger(){
+                margin-top: 40px;
+            }
+        }
+
+        }
+    }
+}
+
+

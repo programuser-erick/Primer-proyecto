@@ -1,0 +1,152 @@
+body {
+  background-color: #1e1a26;
+  color: #4b3c99;
+}
+
+nav {
+  padding: 2rem;
+  background-color: #4b3c99;
+}
+nav .container-fluid div {
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  nav .container-fluid div .navbar-brand {
+    display: none;
+  }
+}
+nav .container-fluid div ul {
+  font-size: 20px;
+}
+nav .container-fluid div ul li {
+  padding-right: 20px;
+}
+nav .container-fluid div ul li a {
+  color: white;
+}
+@media screen and (max-width: 1400px) {
+  nav .container-fluid div ul li a:hover {
+    color: #edc452;
+    background-color: transparent;
+  }
+}
+
+main h1 {
+  padding: 20px;
+  margin-top: 4rem;
+  font-family: "Playfair Display", serif;
+  color: #edc452;
+}
+main section {
+  margin-top: 90px;
+  margin-bottom: 5rem;
+  line-height: 30px;
+}
+main section div div .title-sub {
+  font-family: "Playfair Display", serif;
+  position: sticky;
+  top: 0;
+  color: #edc452;
+}
+main section div div {
+  color: white;
+  font-weight: 700;
+}
+main section div div .parrafo-subtitulo {
+  margin-bottom: 100px;
+}
+main section div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+  color: white;
+  font-weight: 700;
+}
+
+section .bordes {
+  border: 3px solid #4b3c99;
+  border-radius: 2%;
+  padding: 3rem;
+}
+section .bordes div img {
+  border-radius: 2%;
+  -webkit-box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
+  -moz-box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
+  box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
+}
+
+section h3 {
+  color: #edc452;
+}
+section div .flexible {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+section div .flexible .card {
+  border-radius: 2%;
+  -webkit-box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
+  -moz-box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
+  box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
+}
+section div .flexible .card div {
+  background-color: #4c66bf;
+  color: white;
+  padding: 2rem;
+}
+section div .flexible .card div .puesto-tarjeta {
+  color: #1e1a26;
+  font-weight: 700;
+}
+
+section {
+  margin-top: 20%;
+  margin-bottom: 25%;
+}
+
+footer {
+  background-color: #4b3c99;
+  padding: 3rem;
+}
+footer div {
+  font-size: 16px;
+  color: white;
+  align-items: center;
+}
+footer div .p-estilo {
+  color: #edc452;
+}
+footer div .margin-query a {
+  text-decoration: none;
+}
+footer div .margin-query a .estilo-redes {
+  padding: 15px;
+  border: 3px solid #4c66bf;
+  border-radius: 50%;
+  color: white;
+  margin: 5px;
+}
+@media screen and (max-width: 1400px) {
+  footer div .margin-query a .estilo-redes:hover {
+    background-color: #1e1a26;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer div .margin-query a .estilo-redes {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer div .margin-query a {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer div .margin-query {
+    margin-top: 40px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,13 @@
+@mixin media-hover () {
+    @media screen and (max-width: 1400px){
+        @content;
+    }
+}
+
+@mixin menu-burger(){
+    @media screen and (max-width: 767px){
+            @content;        
+        }
+    
+}
+
