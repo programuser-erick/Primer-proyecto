@@ -1,0 +1,39 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+//mobile first
+.contenidoContacto{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .bloqueContacto__texto{
+        color: white;
+    }
+    .bloqueContacto__fila{
+        color: white;
+
+    // diseño escritorio
+        @include mixins.escritorio{
+        
+            .fila__columna{
+                max-width: 70%;
+                border-radius: 2%;
+                -webkit-box-shadow: 4px 3px 0px 0px rgba(237,196,82,1);
+                -moz-box-shadow: 4px 3px 0px 0px rgba(237,196,82,1);
+                box-shadow: 4px 3px 0px 0px rgba(237,196,82,1);
+            }
+            .boton:hover{
+                color: map-get($map:variables.$colores , $key: amarillo );
+            }
+        }
+    }
+    .boton{
+        background-color: map-get($map: variables.$colores, $key: celeste);
+        margin: 25px;
+        color: white;
+        width: 80px;
+        border: none;
+        border-radius: 10%;
+        padding: 7px;
+    }
+}

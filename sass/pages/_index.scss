@@ -1,0 +1,54 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+//section
+.caracteristicas__titulo{
+    color: map-get($map: variables.$colores, $key: amarillo );
+}
+.contenido__Secundario{
+    color: white;
+}
+
+
+//carrusel
+.carruselPrincipal{
+    height: 60%;
+    @include mixins.bordes;
+    .carruselPrincipal__componentes{
+        height: 100%;
+    }
+} 
+.componentes__contenedor{
+    height: 100%;
+    .contenedor__imagen{
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+//caracteristicas
+
+.caracteristicas{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    .caracteristicas__titulo{
+        font-family: 'Playfair Display', serif;
+    } 
+} 
+.objetivos{
+    padding: 2rem;
+    .objetivos__bordes{
+        @include mixins.bordes;
+        .objetivos__encabezado{
+            color: #4c66bf;
+            font-weight: bold;
+        }
+        .objetivos__texto{
+            color: white;
+            padding-top: 30px;
+        }  
+
+        &:last-of-type{
+            border-right: none;
+        }
+    }
+}  

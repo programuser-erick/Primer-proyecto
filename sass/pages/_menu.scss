@@ -1,0 +1,69 @@
+
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+//movile-first
+
+.fila{
+    padding-bottom: 2rem;
+    .fila__subtitulo{
+        color: white;
+        margin-top: 80px;
+    }
+}
+.bloque__tarjeta{
+    height: 400px;
+    margin: 20px;
+    border-radius: 2%;
+    -webkit-box-shadow: 4px 3px 0px 0px rgba(237,196,82,1);
+    -moz-box-shadow: 4px 3px 0px 0px rgba(237,196,82,1);
+    box-shadow: 4px 3px 0px 0px rgba(237,196,82,1);
+    .bloque__imagen{
+        height: 50%;
+        object-fit: cover;
+    }
+    .bloque__descripcion{
+        background-color: map-get( variables.$colores , "celeste" );
+        .descripcion__titulo{
+            font-weight: 600;
+            color: black;
+        }
+        .descripcion__parrafo{
+            color: white;
+            font-weight: 700;
+        }
+    }
+
+//diseño escritorio
+    @include mixins.escritorio{
+        overflow: hidden;
+        height: 400px;
+        .bloque__imagen{
+            width: 100%;
+            height: 100%;
+        }
+        .bloque__descripcion{
+            position: absolute;
+            color: white;
+            height: 100%;
+            top: 86%;
+            transition: all 1s;
+            background-color: whitesmoke;
+            color: black;
+            opacity: 0.6;
+
+            .descripcion__parrafo{
+                color: black;
+                font-weight: 700;
+            }
+
+            &:hover{
+            transition: all 1s;
+            top: 0%;
+            }
+        }
+        
+    }    
+}
+
+

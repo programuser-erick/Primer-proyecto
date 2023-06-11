@@ -1,0 +1,81 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+//introduccion
+    .tituloHistoria{
+        padding: 20px;
+        margin-top: 4rem;
+        font-family: 'Playfair Display', serif;
+        color: map-get($map: variables.$colores, $key: amarillo);
+    }
+    .Historia{
+    margin-top: 90px;
+    margin-bottom: 5rem;
+    line-height: 30px;
+        .historia__contenido{
+            .contenido__texto{
+                .texto__sub{
+                    font-family: 'Playfair Display', serif;
+                    position: sticky;
+                    top: 0;
+                    color: map-get($map: variables.$colores, $key: amarillo);
+                }
+            }
+            .contenido__texto{
+            color: white;
+            font-weight: 700;
+                .parrafo-subtitulo{
+                    margin-bottom: 100px;
+                }
+            }
+            .contenido__texto{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 3rem;
+                color: white;
+                font-weight: 700;
+            }
+        }
+    }
+
+//galeria
+
+.bordes{
+    border: 3px solid map-get($map: variables.$colores, $key: violeta);
+    border-radius: 2%;
+    padding: 3rem;
+    .bordes-img{
+        width: 100%;
+        @include mixins.bordes;
+    }
+}
+
+//presentacion
+.subtituloPresentacion{
+    color: map-get($map: variables.$colores, $key: amarillo);
+   }
+.contenido__tarjeta{
+    @include mixins.bordes;
+    .tarjeta__descripcion{
+        background-color: map-get($map: variables.$colores, $key: celeste);
+        color: white;
+        padding: 2rem;
+        .puesto-tarjeta{
+            color: map-get($map: variables.$colores, $key: azulado);
+            font-weight: 700;
+        }
+    }
+}
+
+.subtituloStaff{
+    color: map-get($map: variables.$colores, $key: amarillo );
+}
+div{
+    .presentacionStaff__imagen{
+        width: 100%;
+    }
+    .presentacionStaff__texto{
+        color: white;
+    }
+}

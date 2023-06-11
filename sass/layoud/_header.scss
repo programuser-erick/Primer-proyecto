@@ -1,0 +1,32 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+nav{
+    padding: 2rem;
+    background-color: map-get($map: variables.$colores, $key: violeta);
+    .container-fluid{
+        div{
+            align-items: center;
+            justify-content: space-between;
+            .navbar-brand{
+                @include mixins.menuResponsive{
+                    display: none;
+                }
+            }
+            ul{
+                font-size: 20px;
+                li{
+                    padding-right: 20px;
+                    a{
+                        color: white;
+                    &:hover{
+                        @include mixins.media-hover(){
+                        color: map-get($map: variables.$colores, $key: amarillo);
+                        }
+                            
+                    }
+                    }
+                }
+            }
+        }
+    }    
+}

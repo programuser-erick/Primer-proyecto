@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"footer.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/layoud/footer.scss","../../sass/base/_mediaquery.scss"],"names":[],"mappings":"AAGA;EACI;EACA;;AACA;EACI;EACA;EACA;;AACA;EACI;;AAGA;EACI;;AACA;EACI;EACA;EACA;EACA;EACA;;AClBhB;EDmBY;IAEQ;;;ACfpB;EDoBQ;IAEQ;;;ACtBhB;ED2BI;IAEQ;IACA","file":"footer.css"}

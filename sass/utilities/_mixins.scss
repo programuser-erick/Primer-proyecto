@@ -1,0 +1,29 @@
+@use "./variables";
+
+
+@mixin bordes{
+    border-radius: 2%;
+    -webkit-box-shadow: 4px 3px 0px 0px map-get($map: variables.$colores, $key: amarillo);
+    -moz-box-shadow: 4px 3px 0px 0px map-get($map: variables.$colores, $key: amarillo);;
+    box-shadow: 4px 3px 0px 0px map-get($map: variables.$colores, $key: amarillo);;
+}
+
+
+
+//media querys
+@mixin escritorio{
+    @media screen and (min-width: 992px){
+        @content
+    }
+};
+@mixin menuResponsive{
+    @media screen and (max-width: 767px){
+        @content;        
+    }
+};
+@mixin media-hover () {
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+

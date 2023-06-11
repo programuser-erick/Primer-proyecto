@@ -1,6 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto+Slab:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #1e1a26;
   color: #4b3c99;
+  font-family: "Roboto Slab", serif;
+}
+
+h1, h2 {
+  color: #edc452;
+  font-family: "Playfair display", serif;
 }
 
 nav {
@@ -25,85 +37,10 @@ nav .container-fluid div ul li {
 nav .container-fluid div ul li a {
   color: white;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 768px) {
   nav .container-fluid div ul li a:hover {
     color: #edc452;
-    background-color: transparent;
   }
-}
-
-main h1 {
-  padding: 20px;
-  margin-top: 4rem;
-  font-family: "Playfair Display", serif;
-  color: #edc452;
-}
-main section {
-  margin-top: 90px;
-  margin-bottom: 5rem;
-  line-height: 30px;
-}
-main section div div .title-sub {
-  font-family: "Playfair Display", serif;
-  position: sticky;
-  top: 0;
-  color: #edc452;
-}
-main section div div {
-  color: white;
-  font-weight: 700;
-}
-main section div div .parrafo-subtitulo {
-  margin-bottom: 100px;
-}
-main section div div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 3rem;
-  color: white;
-  font-weight: 700;
-}
-
-section .bordes {
-  border: 3px solid #4b3c99;
-  border-radius: 2%;
-  padding: 3rem;
-}
-section .bordes div img {
-  border-radius: 2%;
-  -webkit-box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
-  -moz-box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
-  box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
-}
-
-section h3 {
-  color: #edc452;
-}
-section div .flexible {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 4rem;
-}
-section div .flexible .card {
-  border-radius: 2%;
-  -webkit-box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
-  -moz-box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
-  box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
-}
-section div .flexible .card div {
-  background-color: #4c66bf;
-  color: white;
-  padding: 2rem;
-}
-section div .flexible .card div .puesto-tarjeta {
-  color: #1e1a26;
-  font-weight: 700;
-}
-
-section {
-  margin-top: 20%;
-  margin-bottom: 25%;
 }
 
 footer {
@@ -128,14 +65,9 @@ footer div .margin-query a .estilo-redes {
   color: white;
   margin: 5px;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 768px) {
   footer div .margin-query a .estilo-redes:hover {
     background-color: #1e1a26;
-  }
-}
-@media screen and (max-width: 767px) {
-  footer div .margin-query a .estilo-redes {
-    margin: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -146,6 +78,280 @@ footer div .margin-query a .estilo-redes {
 @media screen and (max-width: 767px) {
   footer div .margin-query {
     margin-top: 40px;
+  }
+}
+
+.caracteristicas__titulo {
+  color: #edc452;
+}
+
+.contenido__Secundario {
+  color: white;
+}
+
+.carruselPrincipal {
+  height: 60%;
+  border-radius: 2%;
+  -webkit-box-shadow: 4px 3px 0px 0px #edc452;
+  -moz-box-shadow: 4px 3px 0px 0px #edc452;
+  box-shadow: 4px 3px 0px 0px #edc452;
+}
+.carruselPrincipal .carruselPrincipal__componentes {
+  height: 100%;
+}
+
+.componentes__contenedor {
+  height: 100%;
+}
+.componentes__contenedor .contenedor__imagen {
+  height: 100%;
+  object-fit: contain;
+}
+
+.caracteristicas {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.caracteristicas .caracteristicas__titulo {
+  font-family: "Playfair Display", serif;
+}
+
+.objetivos {
+  padding: 2rem;
+}
+.objetivos .objetivos__bordes {
+  border-radius: 2%;
+  -webkit-box-shadow: 4px 3px 0px 0px #edc452;
+  -moz-box-shadow: 4px 3px 0px 0px #edc452;
+  box-shadow: 4px 3px 0px 0px #edc452;
+}
+.objetivos .objetivos__bordes .objetivos__encabezado {
+  color: #4c66bf;
+  font-weight: bold;
+}
+.objetivos .objetivos__bordes .objetivos__texto {
+  color: white;
+  padding-top: 30px;
+}
+.objetivos .objetivos__bordes:last-of-type {
+  border-right: none;
+}
+
+.tituloHistoria {
+  padding: 20px;
+  margin-top: 4rem;
+  font-family: "Playfair Display", serif;
+  color: #edc452;
+}
+
+.Historia {
+  margin-top: 90px;
+  margin-bottom: 5rem;
+  line-height: 30px;
+}
+.Historia .historia__contenido .contenido__texto .texto__sub {
+  font-family: "Playfair Display", serif;
+  position: sticky;
+  top: 0;
+  color: #edc452;
+}
+.Historia .historia__contenido .contenido__texto {
+  color: white;
+  font-weight: 700;
+}
+.Historia .historia__contenido .contenido__texto .parrafo-subtitulo {
+  margin-bottom: 100px;
+}
+.Historia .historia__contenido .contenido__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+  color: white;
+  font-weight: 700;
+}
+
+.bordes {
+  border: 3px solid #4b3c99;
+  border-radius: 2%;
+  padding: 3rem;
+}
+.bordes .bordes-img {
+  width: 100%;
+  border-radius: 2%;
+  -webkit-box-shadow: 4px 3px 0px 0px #edc452;
+  -moz-box-shadow: 4px 3px 0px 0px #edc452;
+  box-shadow: 4px 3px 0px 0px #edc452;
+}
+
+.subtituloPresentacion {
+  color: #edc452;
+}
+
+.contenido__tarjeta {
+  border-radius: 2%;
+  -webkit-box-shadow: 4px 3px 0px 0px #edc452;
+  -moz-box-shadow: 4px 3px 0px 0px #edc452;
+  box-shadow: 4px 3px 0px 0px #edc452;
+}
+.contenido__tarjeta .tarjeta__descripcion {
+  background-color: #4c66bf;
+  color: white;
+  padding: 2rem;
+}
+.contenido__tarjeta .tarjeta__descripcion .puesto-tarjeta {
+  color: #1e1a26;
+  font-weight: 700;
+}
+
+.subtituloStaff {
+  color: #edc452;
+}
+
+div .presentacionStaff__imagen {
+  width: 100%;
+}
+div .presentacionStaff__texto {
+  color: white;
+}
+
+.fila {
+  padding-bottom: 2rem;
+}
+.fila .fila__subtitulo {
+  color: white;
+  margin-top: 80px;
+}
+
+.bloque__tarjeta {
+  height: 400px;
+  margin: 20px;
+  border-radius: 2%;
+  -webkit-box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
+  -moz-box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
+  box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
+}
+.bloque__tarjeta .bloque__imagen {
+  height: 50%;
+  object-fit: cover;
+}
+.bloque__tarjeta .bloque__descripcion {
+  background-color: #4c66bf;
+}
+.bloque__tarjeta .bloque__descripcion .descripcion__titulo {
+  font-weight: 600;
+  color: black;
+}
+.bloque__tarjeta .bloque__descripcion .descripcion__parrafo {
+  color: white;
+  font-weight: 700;
+}
+@media screen and (min-width: 992px) {
+  .bloque__tarjeta {
+    overflow: hidden;
+    height: 400px;
+  }
+  .bloque__tarjeta .bloque__imagen {
+    width: 100%;
+    height: 100%;
+  }
+  .bloque__tarjeta .bloque__descripcion {
+    position: absolute;
+    color: white;
+    height: 100%;
+    top: 86%;
+    transition: all 1s;
+    background-color: whitesmoke;
+    color: black;
+    opacity: 0.6;
+  }
+  .bloque__tarjeta .bloque__descripcion .descripcion__parrafo {
+    color: black;
+    font-weight: 700;
+  }
+  .bloque__tarjeta .bloque__descripcion:hover {
+    transition: all 1s;
+    top: 0%;
+  }
+}
+
+.contenidoContacto {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.contenidoContacto .bloqueContacto__texto {
+  color: white;
+}
+.contenidoContacto .bloqueContacto__fila {
+  color: white;
+}
+@media screen and (min-width: 992px) {
+  .contenidoContacto .bloqueContacto__fila .fila__columna {
+    max-width: 70%;
+    border-radius: 2%;
+    -webkit-box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
+    -moz-box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
+    box-shadow: 4px 3px 0px 0px rgb(237, 196, 82);
+  }
+  .contenidoContacto .bloqueContacto__fila .boton:hover {
+    color: #edc452;
+  }
+}
+.contenidoContacto .boton {
+  background-color: #4c66bf;
+  margin: 25px;
+  color: white;
+  width: 80px;
+  border: none;
+  border-radius: 10%;
+  padding: 7px;
+}
+
+.coctelesTexto {
+  color: white;
+}
+
+.colCocteles {
+  border-radius: 2%;
+  -webkit-box-shadow: 4px 3px 0px 0px #edc452;
+  -moz-box-shadow: 4px 3px 0px 0px #edc452;
+  box-shadow: 4px 3px 0px 0px #edc452;
+}
+.colCocteles .carrusel__bloque {
+  width: 100%;
+  height: 400px;
+}
+.colCocteles .carrusel__bloque .carrusel__imgContenido {
+  width: 100%;
+  height: 100%;
+}
+.colCocteles .carrusel__bloque .carrusel__imgContenido .imgContenido__tragos {
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+}
+@media screen and (min-width: 992px) {
+  .colCocteles {
+    height: 400px;
+  }
+  .colCocteles .colCocteles__carrusel {
+    height: 100%;
+  }
+  .colCocteles .colCocteles__carrusel .carrusel__bloque {
+    height: 100%;
+  }
+}
+
+.bg .bloque__imagen {
+  object-fit: contain;
+}
+.bg .bloque__descripcion {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .bg {
+    background-color: #4c66bf;
   }
 }
 

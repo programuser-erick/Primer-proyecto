@@ -1,0 +1,47 @@
+
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+.coctelesTexto{
+    color: white;
+}
+.colCocteles{
+    @include mixins.bordes;
+    .carrusel__bloque{
+        width: 100%;
+        height: 400px;
+        .carrusel__imgContenido{
+            width: 100%;
+            height: 100%;
+            .imgContenido__tragos{
+                width: 100%;
+                height: 100%;
+                object-fit: none;
+            }
+        }
+    }
+ 
+    @include mixins.escritorio{
+        height: 400px;
+        .colCocteles__carrusel{
+            height: 100%;
+            .carrusel__bloque{
+                height: 100%;
+            }
+        }
+
+    }     
+}
+
+.bg{
+    .bloque__imagen{
+        object-fit: contain;
+    }
+    .bloque__descripcion{
+        width: 100%;
+    }
+
+    @include mixins.escritorio{
+        background-color: map-get($map: variables.$colores, $key:celeste );
+    }
+}

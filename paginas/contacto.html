@@ -1,56 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="../imagenes/2427847_dish_flatware_fork_knife_spoon_icon.png " type="image/x-icon">
-    <!-- css -->
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Rojo vivo | Contacto</title>
-</head>
-<body>
-<!-- barra de navegacion -->
-    <nav class="navbar navbar-expand-md">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-Toggler">
-            <a class="navbar-brand" href="../index.html">
-              <img src="../imagenes/2427847_dish_flatware_fork_knife_spoon_icon (1).png" alt="logo del encabezado">
-            </a>
-            <ul class="navbar-nav d-flex align-items-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="historia.html">Historia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menú</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cocteles.html">Cócteles Especiales</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Espacio para describir tu opión de nuestro servicio, enviando un mail y describiendo la atención y estado del local ">
+		<meta name="keywords" content="Email, opiniones, contacto, reseñas">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../imagenes/favicon/favicon.png " type="image/x-icon">
+        <!-- css -->
+        <link rel="stylesheet" href="../css/app.css">
+        <title>Rojo vivo | Contacto</title>
+    </head>
+    <body>
+    <!-- barra de navegacion -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-Toggler">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../imagenes/favicon/logo.png" alt="logo del encabezado">
+                    </a>
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cocteles.html">Cócteles Especiales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
+        <main class="contenidoContacto">
+            <div class="container bloqueContacto">
+                <h1 class="text-center bloqueContacto__titulo mt-5">Contacto</h1>
+                    <p class="text-center bloqueContacto__texto">¿¡Que te pareció la experiencia!?</p>
+                <div class="row text-center my-5 d-flex justify-content-center bloqueContacto__fila">
+                    <div class="col col-sm-12 col-md-12 fila__columna p-3">
+                        <form action="">
+                            <div class="mb-3 formulario">
+                                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="mb-3 formulario">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3 formulario">
+                                <label for="exampleFormControlTextarea1" class="form-label">¡Cuentanos un poco más!</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="btn-group formularioBotones" role="group" aria-label="Basic outlined example">
+                                <button type="submit" class="boton">Enviar</button>
+                                <button type="reset" class="boton">Borrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
 
+        <!-- footer -->
+        <footer class="container-fluid text-center">
+            <div class="row estilo-footer">
+                <div class="col-sm-12 col-md-4 p-estilo">
+                    <p>Restaurante Rojo vivo</p>
+                </div>
+                <div class="col-sm-12 col-md-4 ">
+                    <p>Todos los derechos reservados<br>Pagina creada por Erick (2023) &#169;</p>
+                </div>
+                <div class="col-sm-12 col-md-4 margin-query">
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="bi bi-twitter estilo-redes"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="bi bi-facebook estilo-redes"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="bi bi-instagram estilo-redes"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
-</body>
+    </body>
 </html>

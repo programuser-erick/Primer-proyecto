@@ -1,56 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="../imagenes/2427847_dish_flatware_fork_knife_spoon_icon.png" type="image/x-icon">
-    <!-- css -->
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Rojo vivo | Cócteles</title>
-</head>
-<body>
-<!-- barra de navegacion -->
-    <nav class="navbar navbar-expand-md">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-Toggler">
-            <a class="navbar-brand" href="../index.html">
-              <img src="../imagenes/2427847_dish_flatware_fork_knife_spoon_icon (1).png" alt="logo del encabezado">
-            </a>
-            <ul class="navbar-nav d-flex align-items-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="historia.html">Historia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menú</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cocteles.html">Cócteles Especiales</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Diferentes tipos de cocteles, preparados por el mejor bartender, desde bebidas sin alcohol hasta diferentes tipos de mojitos y piscos">
+		<meta name="keywords" content="Bar, cocteleria, pisco, mojito, bartender, espectaculo">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../imagenes/favicon/favicon.png" type="image/x-icon">
+        <!-- css -->
+        <link rel="stylesheet" href="../css/app.css">
+        <title>Rojo vivo | Cócteles</title>
+    </head>
+    <body>
+    <!-- barra de navegacion -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-Toggler">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../imagenes/favicon/logo.png" alt="logo del encabezado">
+                    </a>
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cocteles.html">Cócteles Especiales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
+        <main>
+            <h1 class="text-center mt-5">Cocteles</h1>
+            <p class="text-center mb-5 coctelesTexto">¡Para mejorar tu experiencia!</p>
+    <!-- carrusel cocteles -->
+            <div class="container px-4">
+                <div class="row">
+                    <div class="col col-sm-12 col-md-12 col-lg-12 colCocteles">
+                        <div id="carouselExampleAutoplaying" class="carousel slide colCocteles__carrusel" data-bs-ride="carousel">
+                            <div class="carousel-inner carrusel__bloque">
+                                <div class="carousel-item active carrusel__imgContenido">
+                                    <img src="../imagenes/img-cocteles/carrusel1.png" class="d-block w-100 imgContenido__tragos" alt="trago de frambuesa">
+                                </div>
+                                <div class="carousel-item carrusel__imgContenido">
+                                    <img src="../imagenes/img-cocteles/carrusel2.png" class="d-block w-100 imgContenido__tragos" alt="trago pisco sour">
+                                </div>
+                                <div class="carousel-item carrusel__imgContenido">
+                                    <img src="../imagenes/img-cocteles/carrusel3.png" class="d-block w-100 imgContenido__tragos" alt="trago margarita">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- seccion de tipos de tragos -->
+            <section class="container contenidoTragos mt-5">
+                <h2 class="text-center">A continuación puede elegir los distintos tipos</h2>
+                <div class="row fila">
+                    <h3 class="text-center mt-5 coctelesTexto">Sin alcohol</h3>
+                    <div class="col col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center fila__bloque">
+                        <div class="card bloque__tarjeta bg" style="width: 18rem;">
+                            <img src="../imagenes/img-cocteles/sin-alcohol.png" loading="lazy" class="card-img-top bloque__imagen" alt="coctel de maracuya">
+                            <div class="card-body bloque__descripcion">
+                                <h3 class="text-center descripcion__titulo">Caipiriña<br>de Maracuya</h3>
+                                <p class="card-text descripcion__parrafo text-center">Lima, azucar blanco, cachaca y maracuya.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center fila__bloque">
+                        <div class="card bloque__tarjeta bg" style="width: 18rem;">
+                            <img src="../imagenes/img-cocteles/sin-alcohol2.png" loading="lazy" class="card-img-top bloque__imagen" alt="coctel de ginebra">
+                            <div class="card-body bloque__descripcion">
+                                <h3 class="text-center descripcion__titulo">Alexander</h3>
+                                <p class="card-text descripcion__parrafo text-center">Ginebra, crema de cacao, crema de leche</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center fila__bloque">
+                        <div class="card bloque__tarjeta bg" style="width: 18rem;">
+                            <img src="../imagenes/img-cocteles/sin-alcochol3.png" loading="lazy" class="card-img-top bloque__imagen" alt="piña colada frutilla">
+                            <div class="card-body bloque__descripcion">
+                                <h3 class="text-center descripcion__titulo">Piña colada Frutilla</h3>
+                                <p class="card-text descripcion__parrafo text-center">Ron blanco, azucar, coco, piña, fresa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row fila">
+                    <h3 class="text-center coctelesTexto">Algo distinto</h3>
+                    <div class="col col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center fila__bloque">
+                        <div class="card bloque__tarjeta bg" style="width: 18rem;">
+                            <img src="../imagenes/img-cocteles/extravagante.png" loading="lazy" class="card-img-top bloque__imagen" alt="coctel de vodka">
+                            <div class="card-body bloque__descripcion">
+                                <h3 class="text-center descripcion__titulo">Cosmopolitan</h3>
+                                <p class="card-text descripcion__parrafo text-center">Vodka, triple seco, zumo de lima</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center fila__bloque">
+                        <div class="card bloque__tarjeta bg" style="width: 18rem;">
+                            <img src="../imagenes/img-cocteles/extravagante2.png" loading="lazy" class="card-img-top bloque__imagen" alt="coctel de pisco">
+                            <div class="card-body bloque__descripcion">
+                                <h3 class="text-center descripcion__titulo">Pisco Sour</h3>
+                                <p class="card-text descripcion__parrafo text-center">Pisco, zumo de limón, ázucar, angostura y clara de huevo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center fila__bloque">
+                        <div class="card bloque__tarjeta bg" style="width: 18rem;">
+                            <img src="../imagenes/img-cocteles/extravagante3.png" loading="lazy" class="card-img-top bloque__imagen" alt="coctel de ginebra y limón">
+                            <div class="card-body bloque__descripcion">
+                                <h3 class="text-center descripcion__titulo">Pink lady</h3>
+                                <p class="card-text descripcion__parrafo text-center">Ginebra, granadina, zumo de limón</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row fila">
+                    <h3 class="text-center coctelesTexto">Mojitos</h3>
+                    <div class="col col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center fila__bloque">
+                        <div class="card bloque__tarjeta bg" style="width: 18rem;">
+                            <img src="../imagenes/img-cocteles/mojito.png" loading="lazy" class="card-img-top bloque__imagen" alt="coctel frutos rojos">
+                            <div class="card-body bloque__descripcion">
+                                <h3 class="text-center descripcion__titulo">Mojito Frutos Rojos</h3>
+                                <p class="card-text descripcion__parrafo text-center">Lima, ázucar, ron blanco y frutos rojos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center fila__bloque">
+                        <div class="card bloque__tarjeta bg" style="width: 18rem;">
+                            <img src="../imagenes/img-cocteles/mojito2.png" loading="lazy" class="card-img-top bloque__imagen" alt="mojitp de frutilla">
+                            <div class="card-body bloque__descripcion">
+                                <h3 class="text-center descripcion__titulo">Mojito Frutilla</h3>
+                                <p class="card-text descripcion__parrafo text-center">Lima, ázucar, ron blanco y fresa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center fila__bloque">
+                        <div class="card bloque__tarjeta bg" style="width: 18rem;">
+                            <img src="../imagenes/img-cocteles/mojito3.png" loading="lazy" class="card-img-top bloque__imagen" alt="coctel de lima y menta">
+                            <div class="card-body bloque__descripcion">
+                                <h3 class="text-center descripcion__titulo">Mojito Martin Miller’s</h3>
+                                <p class="card-text descripcion__parrafo text-center">Gin Hendrick's, lima, menta, soda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
+        <!-- footer -->
+        <footer class="container-fluid text-center">
+            <div class="row estilo-footer">
+                <div class="col-sm-12 col-md-4 p-estilo">
+                    <p>Restaurante Rojo vivo</p>
+                </div>
+                <div class="col-sm-12 col-md-4 ">
+                    <p>Todos los derechos reservados<br>Pagina creada por Erick (2023) &#169;</p>
+                </div>
+                <div class="col-sm-12 col-md-4 margin-query">
+                    <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter estilo-redes"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook estilo-redes"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram estilo-redes"></i></a>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
 </html>

@@ -1,0 +1,47 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+footer{
+    background-color: map-get($map: variables.$colores, $key: violeta);
+    padding: 3rem;
+    div{
+        font-size: 16px;
+        color: white;
+        align-items: center;
+        .p-estilo{
+            color: map-get($map: variables.$colores, $key: amarillo); 
+        }
+        .margin-query{
+            a{
+                text-decoration: none; 
+                .estilo-redes{
+                    padding: 15px;
+                    border: 3px solid map-get($map: variables.$colores, $key: celeste);
+                    border-radius: 50%;
+                    color: white;
+                    margin: 5px;
+                &:hover{
+                    @include mixins.media-hover {
+                        background-color: map-get($map: variables.$colores, $key: azulado);
+                    } 
+                }
+                }
+
+            &{
+                @include mixins.menuResponsive(){
+                    margin-right: 10px;
+                }
+            }
+                
+            } 
+        &{
+            @include mixins.menuResponsive(){
+                margin-top: 40px;
+            }
+        }
+
+        }
+    }
+}
+
+

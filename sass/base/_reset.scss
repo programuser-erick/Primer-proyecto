@@ -1,0 +1,16 @@
+@use "../utilities/variables";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: map-get($map: variables.$colores , $key: azulado );;
+    color: map-get($map: variables.$colores , $key: violeta );
+    font-family: 'Roboto Slab', serif;
+}
+
+h1,h2{
+ color: map-get($map: variables.$colores , $key: amarillo );
+ font-family: "Playfair display", serif ;
+}
